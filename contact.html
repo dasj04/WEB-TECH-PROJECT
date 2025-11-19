@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — IT Department | Gauhati University</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">IT Department — Gauhati University</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>CONTACT US</h1>
+            <p>We’re here to help you with any queries</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <div class="container">
+
+            <h2>Get in Touch</h2>
+
+            <p>If you have any questions regarding admissions, courses, or events, feel free to contact us.</p>
+
+            <div class="contact-grid">
+
+                <!-- LEFT SIDE INFO -->
+                <div class="info-box">
+                    <h3>Department Address</h3>
+                    <p>Department of Information Technology<br>
+                       Gauhati University, Jalukbari<br>
+                       Guwahati, Assam – 781014</p>
+
+                    <h3>Email</h3>
+                    <a href="mailto:infotech@gauhati.ac.in">infotech@gauhati.ac.in</a>
+
+                    <h3>Phone</h3>
+                    <p>+91-361-2672215</p>
+
+                </div>
+
+                <!-- FORM -->
+                <form id="contactForm" class="form-box">
+
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required />
+
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required />
+
+                    <label>Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    
+                   <button type="button" onclick="location.href='mailto:itdept@gauhati.ac.in?subject=Message%20from%20Website&body=Hello';">
+    Send Message
+</button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 IT Department, Gauhati University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

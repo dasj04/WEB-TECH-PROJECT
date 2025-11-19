@@ -1,0 +1,128 @@
+/* Updated vision_mission.css with navbar/footer matching courses.css */
+
+:root{
+--primary:#003366;
+--accent:#ff6a3d;
+--muted:#6b7280;
+--bg:#f6f8fb;
+--card-bg:#ffffff;
+--soft:#eef6ff;
+--radius:12px;
+--glass:rgba(8,32,50,0.06);
+--max-width:1100px;
+--gap:20px;
+--sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+body{
+margin:0;
+font-family:var(--sans);
+background:var(--bg);
+color:#0f1724;
+line-height:1.45;
+padding:76px 20px 40px;
+}
+
+/* replace existing .navbar rules with this block */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 20px;                /* smaller padding to save width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  /* visual style kept from courses.css */
+  background: linear-gradient(90deg,var(--primary), #062a4a);
+  color: #fff;
+  box-shadow: 0 6px 18px var(--glass);
+  backdrop-filter: blur(6px);
+  flex-wrap: wrap;                   /* allows nav to drop to next line on small screens */
+}
+
+/* logo takes no more space than needed */
+.navbar .logo {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  flex: 0 0 auto;
+}
+
+/* nav is pushed to the right and allowed to wrap */
+.navbar nav {
+  display: flex;
+  gap: 14px;
+  margin-left: auto;                 /* push nav to right */
+  align-items: center;
+  flex-wrap: wrap;                   /* let items wrap beneath the logo if needed */
+}
+
+/* compact links */
+.navbar nav a {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 6px 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: rgba(255,255,255,0.95);
+}
+
+/* very small screens — put links on full width under logo */
+@media (max-width: 520px) {
+  .navbar { padding: 10px 12px; }
+  .navbar .logo { flex-basis: 100%; margin-bottom: 6px; }
+  .navbar nav { width: 100%; justify-content: flex-start; gap: 10px; }
+  .navbar nav a { padding: 6px 6px; font-size: 0.92rem; }
+}
+
+
+
+/* Footer (Created to match navbar styling theme) */
+.footer{
+width:100%;
+background:linear-gradient(90deg,var(--primary),#062a4a);
+color:#fff;
+padding:24px 36px;
+text-align:center;
+margin-top:40px;
+box-shadow:0 -6px 18px var(--glass);
+}
+.footer p{margin:0;font-size:0.95rem;color:rgba(255,255,255,0.85)}
+
+/* Section card styles remain unchanged */
+section{
+background:var(--card-bg);
+padding:32px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+max-width:900px;
+margin:0 auto 32px;
+border:1px solid rgba(0,0,0,0.04);
+transition:0.25s ease;
+}
+section:hover{
+box-shadow:0 14px 34px rgba(0,0,0,0.08);
+transform:translateY(-3px);
+}
+h2{
+color:var(--primary);
+font-size:1.7rem;
+margin:0 0 14px;
+padding-left:12px;
+border-left:4px solid var(--primary);
+font-weight:700;
+letter-spacing:0.3px;
+}
+p{
+color:var(--text-muted);
+font-size:1rem;
+margin:0 0 20px;
+}
+ol{padding-left:22px;margin:10px 0 0}
+ol li{margin-bottom:14px;color:var(--text-muted);font-size:1rem}
+
+
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Department Programmes — Catalogue</title>
+  <link rel="stylesheet" href="courses.css" />
+  <style>
+    /* Page-specific utilities */
+    :root{--primary:#003366;--muted:#666;--card-bg:#fff}
+    .container{max-width:1100px;margin:20px auto;padding:0 16px}
+    .hero{background:var(--primary);color:#fff;padding:28px;border-radius:10px}
+    .hero h1{margin:0 0 6px;font-size:28px}
+    .controls{display:flex;gap:10px;margin:18px 0;align-items:center}
+    .controls input[type=search]{flex:1;padding:10px;border-radius:6px;border:1px solid #ccc}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+    .card{background:var(--card-bg);padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+    .meta{font-size:14px;color:var(--muted);margin-bottom:8px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:14px;background:#eaf3ff;color:var(--primary);font-weight:600;margin-right:8px}
+    .section-title{font-weight:700;margin-top:10px}
+    .download{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none}
+    .accordion{border-top:1px solid #eee;margin-top:12px;padding-top:12px}
+    .accordion summary{cursor:pointer;font-weight:600}
+    footer.footer{margin:28px 0;text-align:center;color:var(--muted)}
+    @media (max-width:520px){.hero h1{font-size:20px}}
+  </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">IT Department — Gauhati University</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+  <div class="container">
+    <header class="hero" role="banner">
+      <h1>Department Programmes</h1>
+      <p style="margin:0;opacity:0.95">Complete list of programmes: Research, Postgraduate, Undergraduate and Integrated offerings.</p>
+    </header>
+
+    <div class="controls" role="region" aria-label="Search and filter">
+      <input type="search" id="search" placeholder="Search programmes (e.g., 'PhD', 'M.Tech', 'B.Tech')" aria-label="Search programmes" />
+      <button id="clear">Clear</button>
+    </div>
+
+    <!-- New Initiatives -->
+    <section aria-labelledby="new-initiatives" class="card">
+      <h2 id="new-initiatives">New Initiatives of the Department</h2>
+      <div class="grid" aria-hidden="false">
+        <div class="card" data-keywords="mtech research ai ml modular">
+          <h3>M.Tech. (Research) in AI & ML [Modular]</h3>
+          <!-- <p class="meta">View course content</p> -->
+          <p><a href="./courses/M.Tech. (Research)-Modular-in AIML.pdf" download class="download">View Course Content</a></p>
+        </div>
+
+        <div class="card" data-keywords="btech honours artificial intelligence machine learning">
+          <h3>B.Tech. (IT/CSE) Honours in Artificial Intelligence and Machine Learning</h3>
+          <!-- <p class="meta">View course content</p> -->
+          <p><a href="./courses/Btech_AIML.pdf" download class="download">View Course Content</a></p>
+        </div>
+
+        <div class="card" data-keywords="btech honours data science">
+          <h3>B.Tech. (IT/CSE) Honours in Data Science</h3>
+          <!-- <p class="meta">View course content</p> -->
+          <p><a href="./courses/BTech_DS.pdf" download class="download">View Course Content</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Programmes -->
+    <section aria-labelledby="research" class="card" style="margin-top:16px">
+      <h2 id="research">Research Programmes</h2>
+      <div class="grid">
+        <article class="card" data-keywords="phd information technology research it">
+          <h3>PhD in Information Technology</h3>
+          <div class="meta"><span class="tag">Intake:</span> As per availability of seats · <strong>Duration:</strong> As per GU PhD Regulation</div>
+
+          <p class="section-title">Admission & Eligibility</p>
+          <p>As per Gauhati University (GU) PhD regulations.</p>
+
+          <p class="section-title">Syllabus / Programme Structure</p>
+          <p><a href="./courses/phd_Syllabus.pdf" download class="download">Download Syllabus</a></p>
+
+          <p class="section-title">Course Outcomes</p>
+          <ul>
+            <li>Prepare research fellows for leadership roles in academia and the IT industry.</li>
+            <li>Develop scientific reasoning and decision-making skills for technology and research.</li>
+            <li>Foster innovation, thought leadership and corporate social responsibility.</li>
+            <li>Prepare professionals for teaching, consulting, government and industry roles.</li>
+            <li>Explain ethical and social implications of IT decisions in a global context.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Postgraduate Programmes -->
+    <section aria-labelledby="postgraduate" class="card" style="margin-top:16px">
+      <h2 id="postgraduate">Postgraduate Programmes</h2>
+      <div class="grid">
+        <article class="card" data-keywords="mtech research ai ml modular postgraduate">
+          <h3>M.Tech. (Research) in AI &amp; ML [Modular]</h3>
+          <div class="meta"><span class="tag">Intake:</span> - · <strong>Duration:</strong> 4 Semesters (2 Years)</div>
+          <p class="section-title">Eligibility</p>
+          <p>Master or four-year UG in engineering, technology, science, computer, software, medicine, agriculture or allied disciplines.</p>
+          <p class="section-title">Admission</p>
+          <p>Admission test conducted by Gauhati University.</p>
+          <p class="section-title">Syllabus / Structure</p>
+          <p><a href="./courses/M.Tech. (Research)-Modular-in AIML.pdf" download class="download">Download Programme Structure &amp; Syllabus</a></p>
+        </article>
+
+        <article class="card" data-keywords="mtech information technology it">
+          <h3>M.Tech. in Information Technology</h3>
+          <div class="meta"><span class="tag">Intake:</span> 18 · <strong>Duration:</strong> 4 Semesters (2 Years)</div>
+          <p class="section-title">Eligibility</p>
+          <p>B.E./B.Tech. in CSE/IT/ECE; M.Sc. IT/CS/Maths &amp; Computing; MCA.</p>
+          <p class="section-title">Admission</p>
+          <p>Admission test conducted by Gauhati University.</p>
+          <p class="section-title">Syllabus / Structure</p>
+          <p><a href="./courses/Mtech_IT_syllabus_2024.pdf" download class="download">Download Programme Structure &amp; Syllabus</a></p>
+
+          <p class="section-title">Course Outcomes</p>
+          <ul>
+            <li>Generate domain knowledge for algorithm simulation and embedded implementations.</li>
+            <li>Integrate knowledge to analyze and solve complex IT problems.</li>
+            <li>Enable investigative research and contribution to technological knowledge.</li>
+            <li>Foster lifelong learning, adaptability and professional growth.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Undergraduate Programmes -->
+    <section aria-labelledby="undergraduate" class="card" style="margin-top:16px">
+      <h2 id="undergraduate">Undergraduate Programmes</h2>
+      <div class="grid">
+        <article class="card" data-keywords="btech information technology it">
+          <h3>B.Tech. in Information Technology</h3>
+          <div class="meta"><span class="tag">Intake:</span> 30 (AICTE Approved) · <strong>Duration:</strong> 8 Semesters (4 Years)</div>
+          <p class="section-title">Admission</p>
+          <p>Admission and counselling via JEE (Main) and CEE (Assam). Candidates must hold a valid PRC of Assam.</p>
+          <p class="section-title">Eligibility</p>
+          <p>As per CEE (Assam) norms (candidate must have valid PRC of Assam).</p>
+          <p class="section-title">Syllabus / Structure</p>
+          <p><a href="./courses/Btech_IT_syllabus.pdf" download class="download">Download Programme Structure</a></p>
+
+          <p class="section-title">Course Outcomes</p>
+          <ul>
+            <li>Understand data management, acquisition and analytics for problem solving.</li>
+            <li>Apply hardware/software methods to real-life R&amp;D problems with emphasis on lifelong learning.</li>
+            <li>Work effectively as individuals and members of multidisciplinary teams.</li>
+            <li>Identify, formulate and solve computing problems considering hardware-software interactions.</li>
+            <li>Demonstrate professional, legal and ethical responsibilities and effective communication.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-keywords="btech computer science cse">
+          <h3>B.Tech. in Computer Science &amp; Engineering</h3>
+          <div class="meta"><span class="tag">Intake:</span> 30 (AICTE Approved) · <strong>Duration:</strong> 8 Semesters (4 Years)</div>
+          <p class="section-title">Admission</p>
+          <p>Admission and counselling via JEE (Main) and CEE (Assam). Candidates must hold a valid PRC of Assam.</p>
+          <p class="section-title">Eligibility</p>
+          <p>As per CEE (Assam) norms (candidate must have valid PRC of Assam).</p>
+          <p class="section-title">Syllabus / Structure</p>
+          <p><a href="./courses/BTech_CSE_syllabus.pdf" download class="download">Download Programme Structure</a></p>
+
+          <p class="section-title">Course Outcomes</p>
+          <ul>
+            <li>Apply computing and mathematical principles to develop real-world computer systems.</li>
+            <li>Design and conduct experiments to analyze and interpret data.</li>
+            <li>Develop creative system design skills addressing realistic constraints.</li>
+            <li>Identify, formulate and solve technical problems using structured engineering approaches.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Integrated Programmes -->
+    <section aria-labelledby="integrated" class="card" style="margin-top:16px">
+      <h2 id="integrated">Integrated Programmes</h2>
+      <div class="grid">
+        <article class="card" data-keywords="bsc msc software development integrated">
+          <h3>Integrated B.Sc. + M.Sc. in Software Development (Five Years)</h3>
+          <div class="meta"><span class="tag">Intake:</span> 30 · <strong>Duration:</strong> 4 (UG) + 1 (PG)</div>
+
+          <p class="section-title">Admission</p>
+          <p>Admission and counselling based on 10+2 marks. Counselling details will be notified at <a href="https://www.gauhati.ac.in" target="_blank" rel="noopener">www.gauhati.ac.in</a>.</p>
+
+          <p class="section-title">Eligibility</p>
+          <p>10+2 with Mathematics at 10+2.</p>
+
+          <p class="section-title">Programme Structure</p>
+          <p><a href="./courses/course_structure_SD.pdf" download class="download">Download Program Structure</a></p>
+
+          <p class="section-title">Important Features</p>
+          <ul>
+            <li>Students select one Major; change of Major allowed after two semesters based on merit and seat availability.</li>
+            <li>Two Minor subjects are taken in the first three semesters; Minors available across campus subjects.</li>
+            <li>Curriculum includes AEC, VAC, SEC, MDC, internships and skill-building components.</li>
+            <li>Exit points: after 1 year — Certificate; after 2 years — Diploma; after 3 years — B.Sc. (Major); after 4 years — B.Sc. (Honours) or B.Sc. (Honours with Research); after 5 years — Integrated M.Sc.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-keywords="bvoc mvoc animation graphic design integrated">
+          <h3>Integrated B.Voc. + M.Voc. in Animation &amp; Graphic Design (Five Years)</h3>
+          <div class="meta"><span class="tag">Intake:</span> 30 · <strong>Duration:</strong> 4 (UG) + 1 (PG)</div>
+
+          <p class="section-title">Admission</p>
+          <p>Admission and counselling based on 10+2 marks. Counselling details will be notified at <a href="https://www.gauhati.ac.in" target="_blank" rel="noopener">www.gauhati.ac.in</a>.</p>
+
+          <p class="section-title">Eligibility</p>
+          <p>10+2.</p>
+
+          <p class="section-title">Programme Structure</p>
+          <p><a href="./courses/course_structure_AGD.pdf" download class="download">Download Program Structure</a></p>
+
+          <p class="section-title">Important Features</p>
+          <ul>
+            <li>Students select one Major; change of Major allowed after two semesters based on merit and seat availability.</li>
+            <li>Two Minor subjects are taken in the first three semesters; Minors available across campus subjects.</li>
+            <li>Curriculum includes AEC, VAC, SEC, MDC, internships and skill-building components.</li>
+            <li>Exit points: after 1 year — Certificate; after 2 years — Diploma; after 3 years — B.Voc. (Major); after 4 years — B.Voc. (Honours) or B.Voc. (Honours with Research); after 5 years — Integrated M.Voc.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Gauhati University — Department. For latest updates visit <a href="https://www.gauhati.ac.in" target="_blank" rel="noopener">gauhati.ac.in</a>.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Simple client-side search over data-keywords and visible text
+    const search = document.getElementById('search');
+    const clearBtn = document.getElementById('clear');
+    const cards = Array.from(document.querySelectorAll('[data-keywords]'));
+
+    function applyFilter(){
+      const q = search.value.trim().toLowerCase();
+      cards.forEach(card =>{
+        const keys = (card.dataset.keywords||'') + ' ' + card.innerText.toLowerCase();
+        card.style.display = keys.includes(q) ? '' : 'none';
+      });
+    }
+
+    search.addEventListener('input', applyFilter);
+    clearBtn.addEventListener('click', ()=>{ search.value=''; applyFilter(); search.focus(); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vision &amp; Mission — IT Department</title>
+
+  <!-- Polished stylesheet (overwrite vision_mission.css with the polished CSS) -->
+  <link rel="stylesheet" href="vision_mission.css" />
+</head>
+<body>
+  <!-- <a class="skip-link" href="#main-content" aria-hidden="false">Skip to content</a> -->
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="logo">Department of Information Technology</div>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="vision-title">
+      <h2 id="vision-title">Vision</h2>
+      <p>
+        The vision of the Department of Information Technology, Gauhati University is to
+        establish a structured seat of learning for inclusive, adaptive, futuristic, and
+        need-oriented studies and research in the domain-specific as well as
+        interdisciplinary areas of Information Technology. To achieve the vision, the
+        department is engaged in creating and nurturing an ecosystem for the systematic
+        study of Information Technology, with embedded learning of science, humanities,
+        and skills, thereby promoting a generation of worthy human and knowledge
+        resources.
+      </p>
+    </section>
+
+    <section aria-labelledby="mission-title">
+      <h2 id="mission-title">Mission</h2>
+      <ol>
+        <li>
+          To impart different programs of studies at UG, PG, and research levels, with
+          a contemporary and up-to-date curriculum, fulfilling the need of a vast pool
+          of local aspiring students.
+        </li>
+        <li>
+          To facilitate hands-on training facilities through a formal schedule as well
+          as an open and unrestricted environment for acquiring and enhancing
+          knowledge and skills on competent technologies.
+        </li>
+        <li>
+          To adopt regular evaluations of the curriculum and the course content, and
+          to take measures for required revisions for implementations.
+        </li>
+        <li>
+          To create opportunities for add-on knowledge and skills, for enhancing
+          competencies of students, through regular activities of academic and
+          industry interaction.
+        </li>
+        <li>
+          To encourage solution and industry-oriented semester-long projects, for
+          creating a pool of employable human resources on completion of their
+          programs.
+        </li>
+        <li>
+          To encourage output-oriented research on region-specific problems and
+          requirements, as well as contemporary and state-of-the-art universal
+          problems, including interdisciplinary areas.
+        </li>
+      </ol>
+    </section>
+
+    <footer class="footer" role="contentinfo" style="max-width:900px;margin:18px auto 40px;">
+      <p>&copy; 2025 Gauhati University — Department. For latest updates visit <a href="https://www.gauhati.ac.in" target="_blank" rel="noopener">gauhati.ac.in</a>.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Improve skip-link visibility behavior for keyboard users (no external libs)
+    (function () {
+      const skip = document.querySelector('.skip-link');
+      if (!skip) return;
+      skip.addEventListener('click', function () {
+        const target = document.getElementById(this.getAttribute('href').slice(1));
+        if (target) target.focus({ preventScroll: true });
+      });
+    })();
+  </script>
+</body>
+</html>

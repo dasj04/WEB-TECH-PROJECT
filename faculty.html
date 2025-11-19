@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty — IT Department, Gauhati University</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+
+<body>
+
+    <!-- TOP NAVBAR -->
+    <header class="top-bar">
+        <div class="container nav-container">
+            <div class="brand">IT Department — Gauhati University</div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <!-- <a href="#" class="active">Faculty</a> -->
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HEADER BANNER -->
+    <section class="faculty-hero">
+        <div class="faculty-overlay"></div>
+        <div class="faculty-title fade-up">
+            <h1>Our Faculty</h1>
+            <p class="delay-1">Experienced. Dedicated. Visionary.</p>
+        </div>
+    </section>
+
+    <!-- FACULTY SECTION -->
+    <section class="container faculty-section">
+
+        <h2 class="reveal">Meet Our Faculty</h2>
+
+        <div class="faculty-grid">
+
+            <!-- CARD 1 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty1.jpg" alt="Faculty Photo">
+                <h3>Dr. Chandan Kalita</h3>
+                <p class="role">Professor & Head of Department</p>
+                <a href="mailto:chandan@gauhati.ac.in" class="email">chandan@gauhati.ac.in</a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty2.jpg" alt="Faculty Photo">
+                <h3>Dr. Ananya Sharma</h3>
+                <p class="role">Associate Professor</p>
+                <a href="mailto:ananya@gauhati.ac.in" class="email">ananya@gauhati.ac.in</a>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty3.jpg" alt="Faculty Photo">
+                <h3>Dr. Abhinav Barman</h3>
+                <p class="role">Assistant Professor</p>
+                <a href="mailto:abhinav@gauhati.ac.in" class="email">abhinav@gauhati.ac.in</a>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty4.jpg" alt="Faculty Photo">
+                <h3>Dr. Priyanka Das</h3>
+                <p class="role">Assistant Professor</p>
+                <a href="mailto:priyanka@gauhati.ac.in" class="email">priyanka@gauhati.ac.in</a>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty5.jpg" alt="Faculty Photo">
+                <h3>Dr. Himanshu Nath</h3>
+                <p class="role">Assistant Professor</p>
+                <a href="mailto:himanshu@gauhati.ac.in" class="email">himanshu@gauhati.ac.in</a>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="faculty-card reveal zoom">
+                <img src="faculty6.jpg" alt="Faculty Photo">
+                <h3>Dr. Tanvi Goswami</h3>
+                <p class="role">Assistant Professor</p>
+                <a href="mailto:tanvi@gauhati.ac.in" class="email">tanvi@gauhati.ac.in</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            © <span id="year"></span> IT Department — Gauhati University
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mainNav = document.getElementById("mainNav");
+
+        mobileMenuBtn.addEventListener("click", () => {
+            mainNav.classList.toggle("show");
+        });
+
+        // Scroll reveal animations
+        document.addEventListener("scroll", revealOnScroll);
+        document.addEventListener("DOMContentLoaded", revealOnScroll);
+
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll(".reveal, .fade-up");
+            const windowHeight = window.innerHeight;
+
+            reveals.forEach(el => {
+                const pos = el.getBoundingClientRect().top;
+                if (pos < windowHeight - 80) {
+                    el.classList.add("visible");
+                }
+            });
+        }
+
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
