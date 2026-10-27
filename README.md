@@ -116,7 +116,7 @@ presenting the project.
     available.
 -   Implemented client-side programme search and the Clear control.
 
-### 2. Team Member 2 --- Home Page and Navigation
+### 2. Gyan Ankur Das --- Home Page and Navigation
 
 -   Built the home page layout and department introduction.
 -   Added quick links, achievement cards, notifications, and footer
@@ -125,13 +125,13 @@ presenting the project.
 -   Added scroll-based fade-in behaviour for selected home-page
     elements.
 
-### 3. Team Member 3 --- Department Information and Faculty Pages
+### 3. Priyam Basistha --- Department Information and Faculty Pages
 
 -   Developed the About and Faculty pages.
 -   Organised department and faculty information into readable sections.
 -   Styled the pages to align with the overall website design.
 
-### 4. Team Member 4 --- Vision, Mission, Contact, and Styling Support
+### 4. Baidurjya Bharadwaz --- Vision, Mission, Contact, and Styling Support
 
 -   Developed the Vision and Mission page.
 -   Built the Contact page with department contact details and a message
